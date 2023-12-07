@@ -2,9 +2,9 @@
 	import '../app.css';
 </script>
 
-<a href="/">
-	<h1 class="w-full border-b-2 border-black bg-white py-2 px-2 py-1 text-4xl">Posters</h1>
-</a>
+<!-- <a href="/"> -->
+<!-- 	<h1 class="w-full border-b-2 border-black bg-white py-2 px-2 py-1 text-4xl">Posters</h1> -->
+<!-- </a> -->
 <slot />
 
 <div

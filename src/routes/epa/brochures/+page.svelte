@@ -1,6 +1,7 @@
 <script>
 	import BrochureBackground from '../../../components/epa/BrochureBackground.svelte';
 	import BrochureOutline from '../../../components/epa/BrochureOutline.svelte';
+	import NoisePattern from '../../../components/epa/patterns/noise.svelte';
 	//TODO: import patterns from each brochure
 	//      see https://s3.amazonaws.com/standardsmanualimages/EPA/prodGallery/epa_page_42-2000.jpg
 	const brochures = [
@@ -9,42 +10,48 @@
 			title: 'Noise Around Our Homes',
 			shortTitle: 'Noise',
 			month: 'January',
-			year: '1977'
+			year: '1977',
+			pattern: NoisePattern
 		},
 		{
 			color: 'epa-orange',
 			title: 'Environmental Law',
 			shortTitle: 'Toxic Substances',
 			month: 'January',
-			year: '1977'
+			year: '1977',
+			pattern: NoisePattern
 		},
 		{
 			color: 'epa-red',
 			title: 'Man-Made Radiation',
 			shortTitle: 'Radiation',
 			month: 'January',
-			year: '1977'
+			year: '1977',
+			pattern: NoisePattern
 		},
 		{
 			color: 'epa-purple',
 			title: 'Upgrading Existing Wastewater Treatment Facilities',
 			shortTitle: 'Technology Transfer',
 			month: 'January',
-			year: '1977'
+			year: '1977',
+			pattern: NoisePattern
 		},
 		{
 			color: 'epa-blue',
 			title: 'Smog, Health and You',
 			shortTitle: 'Air',
 			month: 'January',
-			year: '1977'
+			year: '1977',
+			pattern: NoisePattern
 		},
 		{
 			color: 'epa-teal',
 			title: 'Making Your Wastewater Treatmeent Plant Work',
 			shortTitle: 'Water',
 			month: 'January',
-			year: '1977'
+			year: '1977',
+			pattern: NoisePattern
 		},
 
 		{
@@ -53,7 +60,8 @@
 			shortTitle: 'Research and Developement',
 			description: 'Selected Abstracts',
 			month: 'January',
-			year: '1977'
+			year: '1977',
+			pattern: NoisePattern
 		},
 
 		{
@@ -61,7 +69,8 @@
 			title: 'What You Should Know About the Pesticide Law',
 			shortTitle: 'Pesticides',
 			month: 'January',
-			year: '1977'
+			year: '1977',
+			pattern: NoisePattern
 		},
 
 		{
@@ -70,7 +79,8 @@
 			shortTitle: 'Solid Waste',
 			description: 'The Resource Conservation and Recovery Act',
 			month: 'January',
-			year: '1977'
+			year: '1977',
+			pattern: NoisePattern
 		}
 	];
 </script>
@@ -90,6 +100,7 @@
 						description={brochure.description}
 						month={brochure.month}
 						year={brochure.year}
+						Pattern={brochure.pattern}
 					/>
 				</div>
 				<div class="my-4">
